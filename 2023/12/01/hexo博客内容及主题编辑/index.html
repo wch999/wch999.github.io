@@ -10,7 +10,7 @@
     
     
     
-    <title>c | Hexo</title>
+    <title>hexo博客内容及主题编辑 | Hexo</title>
     <!-- inject:style -->
     <link href="/css/style.css" rel="stylesheet" type="text/css">
     <!-- endinject -->
@@ -161,25 +161,75 @@
     <div class="cube-content">
         <div class="cube-left">
             <div class="cube-article">
-    <h1 class="title">c</h1>
+    <h1 class="title">hexo博客内容及主题编辑</h1>
     
     <div class="cube-article-header">
-        <div class="cube-article-date page">
+        <div class="cube-article-date">
             <i class="cube-icon cube-icon-date" aria-hidden="true"></i>
             <!-- moment.js对象 -->
             2023-12-01
         </div>
+        <div class="cube-article-tags">
+    <i class="cube-icon cube-icon-tag" aria-hidden="true"></i>
+    
+</div>
     </div>
     
     <div class="cube-article-content cube-markdown">
         
-        <h1 id="q"><a href="#q" class="headerlink" title="q"></a>q</h1><h2 id="w"><a href="#w" class="headerlink" title="w"></a>w</h2><h3 id="e"><a href="#e" class="headerlink" title="e"></a>e</h3><h4 id="r"><a href="#r" class="headerlink" title="r"></a>r</h4><h5 id="t"><a href="#t" class="headerlink" title="t"></a>t</h5><h6 id="a"><a href="#a" class="headerlink" title="a"></a>a</h6><p><em>qwe</em></p>
-<p><del>qwe</del></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="title function_">alert</span>(<span class="string">&#x27;RUNOOB&#x27;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
+        <h3 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h3><p># 开启服务</p>
+<p>hexo server</p>
+<p># 新建文章</p>
+<p>hexo new a</p>
+<p># 新建草稿b</p>
+<p>hexo new draft b</p>
+<p># 将草稿b成为文章</p>
+<p>hexo publish b</p>
+<p># 发布页面c</p>
+<p>hexo new page c</p>
+<p># 生成静态文章</p>
+<p>hexo generate 或者是 hexo g</p>
+<p># 部署文章</p>
+<p>hexo deploy 或者是 hexo d</p>
+<p><img src="https://raw.githubusercontent.com/wch999/image/main/imgageimage-20231201174702800.png" alt="image-20231201174702800"></p>
+<h4 id="下载工具Typora-生成文件在Typora中编辑"><a href="#下载工具Typora-生成文件在Typora中编辑" class="headerlink" title="下载工具Typora 生成文件在Typora中编辑"></a>下载工具Typora 生成文件在Typora中编辑</h4><p><img src="https://raw.githubusercontent.com/wch999/image/main/imgageimage-20231201174725136.png" alt="image-20231201174725136"></p>
+<h4 id="编辑完成后"><a href="#编辑完成后" class="headerlink" title="编辑完成后"></a>编辑完成后</h4><h4 id="Hexo-clean"><a href="#Hexo-clean" class="headerlink" title="Hexo clean"></a>Hexo clean</h4><h4 id="Hexo-d-–g"><a href="#Hexo-d-–g" class="headerlink" title="Hexo d –g"></a>Hexo d –g</h4><h4 id="完成后在博客上显示"><a href="#完成后在博客上显示" class="headerlink" title="完成后在博客上显示"></a>完成后在博客上显示</h4><h3 id="主题编辑"><a href="#主题编辑" class="headerlink" title="主题编辑"></a>主题编辑</h3><p>进入该主题的github下载页，我选择主题下载页是这里</p>
+<p><a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a></p>
+<p><img src="https://raw.githubusercontent.com/wch999/image/main/imgageimage-20231201175449215.png" alt="image-20231201175449215"></p>
+<p>然后在本机上进入博客的目录</p>
+<p>cd .&#x2F;themes</p>
+<p>git clone <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-theme-light.git">https://github.com/hexojs/hexo-theme-light.git</a> .&#x2F;light</p>
+<p>找到博客目录下的配置文件 _config.yml</p>
+<p># Extensions</p>
+<p>## Plugins: <a target="_blank" rel="noopener" href="https://hexo.io/plugins/">https://hexo.io/plugins/</a></p>
+<p>## Themes: <a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a></p>
+<p>theme: landscape ## 为自己下载的主题名</p>
+<p> 然后，通过运行命令 hexo s ，启动本地服务，通过<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 查看修改后的效果</p>
+<p><img src="https://raw.githubusercontent.com/wch999/image/main/imgageimage-20231201175613714.png" alt="image-20231201175613714"><br>运行以下命令，使主题更新到博客</p>
+<p>hexo clean</p>
+<p>hexo g</p>
+<p>hexo d</p>
+<p><img src="https://raw.githubusercontent.com/wch999/image/main/imgageimage-20231201175635146.png" alt="image-20231201175635146"></p>
 
     </div>
 </div>
+
+<div class="cube-article-nav">
+    <ul>
+        
+        
+        <li class="next">
+            <a href="/2023/12/01/%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+                typora图床使用
+                <i class="cube-icon cube-next" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+<!-- TODO 根据theme.comment的内容进行入口选择 -->
 
 
 
