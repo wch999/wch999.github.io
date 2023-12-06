@@ -10,7 +10,7 @@
     
     
     
-    <title>typora图床使用 | Hexo</title>
+    <title>12.6 | Hexo</title>
     <!-- inject:style -->
     <link href="/css/style.css" rel="stylesheet" type="text/css">
     <!-- endinject -->
@@ -161,13 +161,13 @@
     <div class="cube-content">
         <div class="cube-left">
             <div class="cube-article">
-    <h1 class="title">typora图床使用</h1>
+    <h1 class="title">12.6</h1>
     
     <div class="cube-article-header">
         <div class="cube-article-date">
             <i class="cube-icon cube-icon-date" aria-hidden="true"></i>
             <!-- moment.js对象 -->
-            2023-12-01
+            2023-12-06
         </div>
         <div class="cube-article-tags">
     <i class="cube-icon cube-icon-tag" aria-hidden="true"></i>
@@ -177,33 +177,24 @@
     
     <div class="cube-article-content cube-markdown">
         
-        <p>1、安装git</p>
-<p>2、安装node</p>
-<p>3、注册一个GitHub账户</p>
-<p>创建blog文件夹</p>
-<p>npm install -g hexo-cli</p>
-<p>hexo init blog</p>
-<p>cd blog</p>
-<p>hexo g</p>
-<p><img src="https://raw.githubusercontent.com/wch999/image/main/imgageimage-20231201180020667.png" alt="image-20231201180020667"></p>
-<p>将自己github信息写入hexo</p>
-<p>Github建库和 shh秘钥</p>
-<p><img src="https://raw.githubusercontent.com/wch999/image/main/imgageimage-20231201180036947.png" alt="image-20231201180036947"></p>
-<p><img src="https://raw.githubusercontent.com/wch999/image/main/imgageimage-20231201180045315.png" alt="image-20231201180045315"></p>
-<p>将自己github信息写入hexo</p>
-<p><img src="https://raw.githubusercontent.com/wch999/image/main/imgageimage-20231201180059347.png" alt="image-20231201180059347"></p>
-<p>npm install hexo-deployer-git –save</p>
-<p>git config –global user.name “xxx”&#x2F;&#x2F; 你的github用户名，非昵称</p>
-<p>git config –global user.email “<a href="mailto:&#x78;&#120;&#120;&#64;&#113;&#113;&#x2e;&#99;&#x6f;&#x6d;">&#x78;&#120;&#120;&#64;&#113;&#113;&#x2e;&#99;&#x6f;&#x6d;</a>“&#x2F;&#x2F; 填写你的github注册邮箱</p>
-<p><img src="https://raw.githubusercontent.com/wch999/image/main/imgageimage-20231201180115618.png" alt="image-20231201180115618"></p>
-<p>deploy:</p>
-<p>​    type: git</p>
-<p>​    repository: <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#x68;&#x75;&#98;&#46;&#99;&#111;&#x6d;">&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#x68;&#x75;&#98;&#46;&#99;&#111;&#x6d;</a>:xxx&#x2F;xxx.github.io.git</p>
-<p>​    branch: main</p>
-<p><img src="https://raw.githubusercontent.com/wch999/image/main/imgageimage-20231201180126898.png" alt="image-20231201180126898"></p>
-<p>这样hexo的文件会在在github库中显示</p>
-<p><img src="https://raw.githubusercontent.com/wch999/image/main/imgageimage-20231201180138489.png" alt="image-20231201180138489"></p>
-<p><img src="https://raw.githubusercontent.com/wch999/image/main/imgageimage-20231201180145320.png" alt="image-20231201180145320"></p>
+        <p><em><strong>centos ssh登录</strong></em></p>
+<p>1.systemctl enable sshd </p>
+<p>2.systemctl start sshd</p>
+<p> 3.vim &#x2F;etc&#x2F;ssh&#x2F;sshd_config   esc et nu显示行号</p>
+<p> 4.38行去掉#后面没有yes就添加yes即可，PermitRootLogin yes </p>
+<p>5.systemctl restart sshd 6.update-rc.d ssh enable开机自启</p>
+<p>如果没有ip</p>
+<p>cd &#x2F;etc&#x2F;sysconfig&#x2F;network-scripts&#x2F; </p>
+<p>ls</p>
+<p> vim ifcfg-ens33  ens33为sentos7版本独有</p>
+<p><img src="https://raw.githubusercontent.com/wch999/image/main/imgageimgageimage-20231206132011674.png" alt="image-20231206132011674"></p>
+<p>onboot&#x3D;no改成yes</p>
+<p>systemctl restart network、</p>
+<p><em><strong>h5 html</strong></em></p>
+<p>在visual studio code 中下载插件</p>
+<p><img src="https://raw.githubusercontent.com/wch999/image/main/imgageimage-20231206190247052.png" alt="image-20231206190247052"></p>
+<p>***html语法 ***</p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/html/html-basic.html">https://www.runoob.com/html/html-basic.html</a></p>
 
     </div>
 </div>
@@ -211,17 +202,10 @@
 <div class="cube-article-nav">
     <ul>
         
-        <li class="prev">
-            <a href="/2023/12/01/hexo%E5%8D%9A%E5%AE%A2%E5%86%85%E5%AE%B9%E5%8F%8A%E4%B8%BB%E9%A2%98%E7%BC%96%E8%BE%91/">
-                <i class="cube-icon cube-prev" aria-hidden="true"></i>
-                hexo博客内容及主题编辑
-            </a>
-        </li>
-        
         
         <li class="next">
-            <a href="/2023/12/01/typora%E5%9B%BE%E5%BA%8A%E4%BD%BF%E7%94%A8/">
-                创建个人博客
+            <a href="/2023/12/05/12-5/">
+                12.5
                 <i class="cube-icon cube-next" aria-hidden="true"></i>
             </a>
         </li>
